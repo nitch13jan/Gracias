@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Facebook Login JavaScript Example</title>
+<meta charset="UTF-8">
+</head>
+<body>
+  
+<script type = "text/javascript" src = "login.js">
+</script>
+
+<script type = "text/javascript" src = "api.js">
+</script> 
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+
+<fb:login-button scope="public_profile,email,publish_actions,user_birthday,user_posts" onlogin="checkLoginState();">
+</fb:login-button>
+
+<h1>autologoutlink</h1>
+<fb:login-button autologoutlink="true"
+                 onlogin="Log.info('onlogin callback')">
+</fb:login-button>
+
+<div id="status">
+</div>
+<div id='posts'>
+</div>
+<div id='list'>
+</div>
+</body>
+</html>
