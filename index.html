@@ -17,12 +17,7 @@
   the FB.login() function when clicked.
 -->
 
-<fb:login-button scope="public_profile,email,publish_actions,user_birthday,user_posts" onlogin="checkLoginState();">
-</fb:login-button>
-
-<h1>autologoutlink</h1>
-<fb:login-button autologoutlink="true"
-                 onlogin="Log.info('onlogin callback')">
+<fb:login-button autologoutlink="true" scope="public_profile,email,publish_actions,user_birthday,user_posts" onlogin="checkLoginState();">
 </fb:login-button>
 
 <div id="status">
